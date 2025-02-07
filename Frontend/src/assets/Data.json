@@ -1,0 +1,27 @@
+[
+    {
+        "label": "Anxiety Disorder",
+        "value": "16000000",
+        "description": "Around 16 million teenagers in Indonesia have psychological anxiety disorder issues."  
+    },
+    {
+        "label": "Major Depression",
+        "value": "15000000",
+        "description": "Around 15 million teenagers in Indonesia have psychological major depression issues."
+    },
+    {
+        "label": "Behavioral Disorder",
+        "value": "2600000",
+        "description": "Around 2.6 million teenagers in Indonesia have psychological behavioral disorder issues."
+    },
+    {
+        "label": "ADHD",
+        "value": "3500000",
+        "description": "Around 3.5 million teenagers in Indonesia have psychological ADHD issues."
+    },
+    {
+        "label": "PTSD",
+        "value": "8100000",
+        "description": "Around 8.1 million teenagers in Indonesia have psychological PTSD issues."
+    }
+]

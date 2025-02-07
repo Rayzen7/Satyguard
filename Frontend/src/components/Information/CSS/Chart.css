@@ -1,0 +1,28 @@
+.chart {
+    width: 700px;
+    display: block;
+}
+
+.chart-img {
+    display: none;
+}
+
+br {
+    display: block;
+}
+
+@media (min-width: 320px) and (max-width: 767px)  {
+    .chart {
+        display: none;
+    }
+
+    .chart-img {
+        display: block;
+        width: 500px;
+        height: auto;
+    }
+
+    br {
+        display: none;
+    }
+}
