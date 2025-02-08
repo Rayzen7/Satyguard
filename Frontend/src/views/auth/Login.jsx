@@ -42,7 +42,7 @@ const Login = () => {
   return (
     <div>
         <NavbarUser/>
-        <div className='flex w-full h-[100vh] justify-center items-center lg:pt-16 gap-32'>
+        <div className='flex w-full h-[100vh] justify-center items-center lg:pt-16 gap-32' data-aos="fade-up" data-aos-duration="800">
             <div className="flex flex-col gap-16">
                 <div className="text-black lg:text-start text-center">
                     <h1 className='lg:text-[42px] text-[24px] font-poppins'>Welcome to <span className='text-purple'>Satyguard</span></h1>
@@ -80,7 +80,7 @@ const Login = () => {
                 </div>
                 <div className="flex flex-col gap-3">
                     <button onClick={handleSubmit} className='bg-purple px-12 w-[160px] lg:mx-0 mx-auto lg:w-[200px] py-3 font-poppins1 text-[14px] lg:text-[16px] rounded-full cursor-pointer text-white transition-all duration-200 hover:bg-white hover:text-purple border-2 border-purple'>Sign In</button>
-                    <p className='lg:text-[16px] text-[14px] lg:text-start text-center font-poppins1'>Don't Have an Account? <a href="" className='underline italic text-purple'>Register Here</a></p>
+                    <p className='lg:text-[16px] text-[14px] lg:text-start text-center font-poppins1'>Don't Have an Account? <a href="/Register" className='underline italic text-purple'>Register Here</a></p>
                 </div>
             </div>
             <div className="image">

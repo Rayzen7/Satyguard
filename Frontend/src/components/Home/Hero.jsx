@@ -2,6 +2,7 @@ import React from 'react'
 import Pics from '/image/hero.png';
 import { Link } from 'react-router-dom';
 import Boarding from '../Boarding';
+import moodDetection from '/image/mood-detection.png'
 
 const Hero = () => {
   return (
@@ -19,6 +20,11 @@ const Hero = () => {
           </div>
           <img src={Pics} alt="" className='lg:w-[450px] h-auto w-[230px]'/>
       </div>
+      <Link data-aos="fade-up" data-aos-duration="800">
+        <div className='hover:scale-[95%] hover:opacity-80 duration-500 transition-all h-full cursor-pointer'>
+          <img src={moodDetection} alt="" className='w-full animate-move'/>
+        </div>
+      </Link>
     </div>
   )
 }

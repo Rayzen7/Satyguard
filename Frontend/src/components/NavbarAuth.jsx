@@ -79,7 +79,7 @@ const NavbarAuth = () => {
         }
     }
 
-    const ulClass = 'lg:items-center items-start font-poppins flex lg:gap-16 lg:mt-0 text-[18px] lg:w-full lg:pl-0 lg:h-0 pl-10 lg:pt-0 lg:relative absolute lg:flex-row flex-col gap-14 top-0 right-0 w-[200px] h-[100vh] -mt-[10px] lg:bg-none bg-white cursor-pointer lg:justify-end justify-center';
+    const ulClass = 'lg:items-center items-start font-poppins flex lg:gap-16 lg:mt-0 text-[18px] lg:w-full lg:pl-0 lg:h-0 pl-10 lg:pt-0 lg:relative absolute lg:flex-row flex-col gap-10 top-0 right-0 w-[200px] h-[100vh] lg:bg-none bg-white cursor-pointer lg:justify-end justify-center';
     const visibilityClass = invisible ? 'animate-moveRight' : 'animate-moveLeft';
 
   return (
@@ -91,6 +91,7 @@ const NavbarAuth = () => {
             <Link to="/"><li className={`hover:scale-95 lg:text-[20px] hover:text-purple transition-all ${location.pathname === '/'  ? 'text-purple' : ''}`}>Home</li></Link>
             <Link to="/Information"><li className={`hover:scale-95 lg:text-[20px] hover:text-purple transition-all ${location.pathname === '/Information'  ? 'text-purple' : ''}`}>Information</li></Link>
             <Link to='/Contacts'><li className={`hover:scale-95 lg:text-[20px] hover:text-purple transition-all ${location.pathname === '/Contacts'  ? 'text-purple' : ''}`}>Contact</li></Link>
+            <Link to='/Satybot'><li className={`hover:scale-95 lg:text-[20px] hover:text-purple transition-all ${location.pathname === '/Satybot'  ? 'text-purple' : ''}`}>Satybot</li></Link>
             {user.map((users) => (
                 <div className="" key={users}>
                     <div className="cursor-default flex justify-center items-center gap-3 group">

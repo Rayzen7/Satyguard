@@ -6,17 +6,22 @@ import Downloads from '../views/Downloads.jsx';
 import Contacts from '../views/Contacts.jsx';
 import ScrollTop from '../components/ScrollTop.jsx';
 import Login from '../views/auth/Login.jsx';
+import Register from '../views/auth/Register.jsx';
 
 const Router = () => {
   return (
     <BrowserRouter>
       <ScrollTop/>
         <Routes>
+            {/* User */}
             <Route path='/' element={<Home/>}/>
             <Route path='/Information' element={<Information/>}/>
             <Route path='/Downloads' element={<Downloads/>}/>
             <Route path='/Contacts' element={<Contacts/>}/>
+
+            {/* Auth */}
             <Route path='/Login' element={<Login/>}/>
+            <Route path='/Register' element={<Register/>}/>
         </Routes>
     </BrowserRouter>
   )

@@ -4,6 +4,7 @@ import About from '../components/Home/About.jsx';
 import Features from '../components/Home/Features.jsx';
 import Footer from '../components/Footer.jsx';
 import { NavbarUser } from './auth/NavbarUser.jsx';
+import Profile from '../components/Home/Profile.jsx';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <Hero/>
         <About/>
         <Features/>
+        <Profile/>
         <Footer/>
     </div>
   )
