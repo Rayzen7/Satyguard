@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('/login', [UserController::class, 'login']);
 Route::post('/register', [UserController::class, 'register']);
 Route::post('/message/add', [MessageController::class, 'store']);
+Route::get('/user/article', [ArticleController::class, 'index']);
 
 Route::middleware('auth-token')->group(function() {
     Route::delete('/logout', [UserController::class, 'logout']);
@@ -24,7 +25,4 @@ Route::middleware('auth-token')->group(function() {
         Route::get('/message', [MessageController::class, 'index']);
     });
 
-    Route::middleware('role:2')->group(function() {
-        Route::get('/user/article', [ArticleController::class, 'index']);
-    });
 });

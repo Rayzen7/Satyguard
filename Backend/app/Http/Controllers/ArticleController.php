@@ -34,7 +34,7 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         $validateData = Validator::make($request->all(), [
-            'image' => 'required',
+            'image' => 'required|mimes:png,jpg,jpeg|max:4000',
             'title' => 'required',
             'desc' => 'required',
             'link' => 'required',
