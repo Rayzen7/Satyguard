@@ -11,9 +11,8 @@ Route::post('/register', [UserController::class, 'register']);
 Route::post('/message/add', [MessageController::class, 'store']);
 
 Route::middleware('auth-token')->group(function() {
-    Route::post('/logout', [UserController::class, 'logout']);
-    Route::post('/user', [UserController::class, 'getUser']);
-
+    Route::delete('/logout', [UserController::class, 'logout']);
+    Route::get('/getuser', [UserController::class, 'getUser']);
 
     Route::middleware('role:1')->group(function() {
         Route::get('/article', [ArticleController::class, 'index']);

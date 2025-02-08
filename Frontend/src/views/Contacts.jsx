@@ -1,13 +1,13 @@
 import React from 'react'
 import Contact from '../components/Contact/Contact.jsx'
-import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
+import { NavbarUser } from './auth/NavbarUser.jsx'
 
 const Contacts = () => {
   return (
     <div>
       <div className='relative z-10'>
-        <Navbar/>
+        <NavbarUser/>
       </div>
       <Contact/>
       <Footer/>

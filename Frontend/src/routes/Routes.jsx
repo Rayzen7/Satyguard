@@ -5,6 +5,7 @@ import Information from '../views/Information.jsx';
 import Downloads from '../views/Downloads.jsx';
 import Contacts from '../views/Contacts.jsx';
 import ScrollTop from '../components/ScrollTop.jsx';
+import Login from '../views/auth/Login.jsx';
 
 const Router = () => {
   return (
@@ -15,6 +16,7 @@ const Router = () => {
             <Route path='/Information' element={<Information/>}/>
             <Route path='/Downloads' element={<Downloads/>}/>
             <Route path='/Contacts' element={<Contacts/>}/>
+            <Route path='/Login' element={<Login/>}/>
         </Routes>
     </BrowserRouter>
   )

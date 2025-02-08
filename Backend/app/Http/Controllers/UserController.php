@@ -55,7 +55,7 @@ class UserController extends Controller
         ]);
 
         return response()->json([
-            'message' => 'create user success'
+            'message' => 'Register Success'
         ], 200);
     }
 
@@ -79,7 +79,7 @@ class UserController extends Controller
         if (Auth::attempt($request->only('email', 'password'))) {
             $token = $email->createToken('access_token')->plainTextToken;
             return response()->json([
-                'message' => 'login success',
+                'message' => 'Login Success',
                 'token' => $token
             ], 200);
         }
@@ -102,7 +102,7 @@ class UserController extends Controller
         }
         $token->delete();
         return response()->json([
-            'message' => 'logout success'
+            'message' => 'Logout Success'
         ], 200);
     }
 

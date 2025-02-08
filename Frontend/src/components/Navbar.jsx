@@ -36,7 +36,7 @@ const Navbar = () => {
             <Link to="/"><li className={`hover:scale-95 lg:text-[20px] hover:text-purple transition-all ${location.pathname === '/'  ? 'text-purple' : ''}`}>Home</li></Link>
             <Link to="/Information"><li className={`hover:scale-95 lg:text-[20px] hover:text-purple transition-all ${location.pathname === '/Information'  ? 'text-purple' : ''}`}>Information</li></Link>
             <Link to='/Contacts'><li className={`hover:scale-95 lg:text-[20px] hover:text-purple transition-all ${location.pathname === '/Contacts'  ? 'text-purple' : ''}`}>Contact</li></Link>
-            <Link to='/Login'><li className='hover:scale-95 lg:text-[20px] hover:text-purple transition-all'>Login</li></Link>
+            <Link to='/Login'><li className={`hover:scale-95 lg:text-[20px] hover:text-purple transition-all ${location.pathname === '/Login'  ? 'text-purple' : ''}`}>Login</li></Link>
             <Link to='/Downloads'><li><button className='font-poppins2 border-2 rounded-2xl lg:px-8 lg:py-2 px-3 py-2 hover:scale-90 transition-all'>Download</button></li></Link>
         </ul>
         <img src={list} alt="" className='lg:w-[20px] h-auto w-[16px] relative z-20 cursor-pointer icon' onClick={toggleList}/>

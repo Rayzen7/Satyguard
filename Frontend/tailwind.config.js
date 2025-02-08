@@ -29,12 +29,22 @@ export default {
           '50%': { transform: 'translateY(5%)' },
           '75%': { transform: 'translateY(-5%)' },
           '100%': { transform: 'translateY(5%)' },
-        }
+        },
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 }
+        },
+        fadeOut: {
+          from: { opacity: 1 },
+          to: { opacity: 0 }
+        },
       },
       animation: {
           moveRight: 'moveRight 1s ease-in-out forwards',
           moveLeft: 'moveLeft 1s ease-in-out forwards',
           move: 'move 10s infinite',
+          fadeIn: 'fadeIn 0.5s forwards',
+          fadeOut: 'fadeOut 0.5s forwards',
         },
       },
       colors: {

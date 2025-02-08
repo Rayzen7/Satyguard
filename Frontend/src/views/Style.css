@@ -1,0 +1,9 @@
+.image {
+    display: block;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .image {
+        display: none;
+    }
+}
