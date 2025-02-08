@@ -20,7 +20,7 @@ class AuthMiddleware
         $token = PersonalAccessToken::findToken($request->bearerToken());
         if (!$token) {
             return response()->json([
-                'message' => 'token invalid'
+                'message' => 'You must log in to use this feature'
             ], 403);
         }
         

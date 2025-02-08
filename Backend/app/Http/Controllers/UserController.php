@@ -13,9 +13,12 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function getUser()
     {
-        //
+        $user = Auth::user();
+        return response()->json([
+            'user' => $user
+        ], 200);
     }
 
     /**

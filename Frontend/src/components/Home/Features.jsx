@@ -21,7 +21,7 @@ const Features = () => {
                         <img src={item.img} alt="" className='bg-white rounded-[9px] group-hover:-translate-y-4 transition-all duration-300 w-[120px] lg:w-[130px] h-auto'/>
                         <div className='lg:text-right text-center font-poppins flex flex-col justify-center lg:items-end items-center'>
                             <h1 className='text-[24px] lg:w-[250px] w-auto lg:pb-0 pb-2 relative z-10'>{item.head}</h1>
-                            <hr className={`bg-pink outline-none border-none w-[${item.hr}] h-[10px] rounded-lg -translate-y-6 lg:-translate-y-4`} />
+                            <div className={`bg-pink outline-none border-none w-[${item.hr}px] h-[10px] rounded-lg -translate-y-6 lg:-translate-y-4`}></div>
                             <p className='lg:w-[250px] w-auto text-[14px] lg:px-0 px-3 lg:mt-0 -mt-3'>{item.text}</p>
                         </div>
                     </div>

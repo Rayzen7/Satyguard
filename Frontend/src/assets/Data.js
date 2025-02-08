@@ -33,28 +33,28 @@ export const datafeatures = [
         img: img1,
         head: "Location Monitoring",
         text: "Monitor your location with family or close friends",
-        hr: "250px",
+        hr: "250",
     },
     {
         id: 2,
         img: img2,
         head: "Active community",
         text: "Forum platform and discussion groups to share information, experiences, and security tips",
-        hr: "230px",
+        hr: "230",
     },
     {
         id: 3,
         img: img3,
         head: "Integration with Other Services",
         text: "Integration with legal services to help users get legal assistance if needed",
-        hr: "180px",
+        hr: "200",
     },
     {
         id: 4,
         img: img4,
         head: "Breaking News",
         text: "Real-time notifications about important events around the user, such as crime news or suspicious activity",
-        hr: "180px",
+        hr: "200",
     },
 ];
 
