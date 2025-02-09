@@ -53,15 +53,15 @@ const Satybot = () => {
             <div className="w-full flex-col flex justify-between h-[100vh] pt-24" data-aos="fade-up" data-aos-duration="800">
                 <img src={glow} alt="" className='absolute -z-20 w-[900px] h-auto bottom-0 left-1/2 -translate-x-1/2' />
                 {showHeader && (
-                    <div className="flex flex-col justify-center items-center gap-5">
-                        <img src={ask} alt="" className='w-[35px] h-auto' />
-                        <h1 className='font-poppins text-[20px]'>Ask our AI anything</h1>
+                    <div className="flex flex-col justify-center lg:mt-0 mt-12 items-center gap-5">
+                        <img src={ask} alt="" className='lg:w-[35px] w-[25px] h-auto' />
+                        <h1 className='font-poppins text-[16px] lg:text-[20px]'>Ask our AI anything</h1>
                     </div>
                 )}
-                <div className="flex flex-col mx-auto w-[700px] justify-between h-[calc(100vh-100px)] pb-14">
-                    <div className="flex flex-col overflow-y-auto h-full px-6 py-4 space-y-4">
+                <div className="flex flex-col mx-auto w-[320px] lg:w-[700px] justify-between h-[calc(100vh-100px)] pb-14">
+                    <div className="flex flex-col overflow-y-auto h-full px-2 lg:px-6 py-4 space-y-4">
                         {messages.map((msg, index) => (
-                            <div key={index} className={`flex flex-col gap-2 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+                            <div key={index} className={`flex flex-col gap-1 lg:gap-2 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                                 <div className={`font-poppins1 w-full text-[18px] text-[#56637E] flex text-gray-500 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                                     <p>
                                         {msg.role === 'user' ? 'Me' : 'Satybot'}
@@ -72,9 +72,9 @@ const Satybot = () => {
                                         msg.role === 'user'
                                             ? 'bg-white text-gray-800 ml-auto'
                                             : 'bg-white text-gray-800 mr-auto'
-                                    } p-4 rounded-lg max-w-[70%] shadow-md`}
+                                    } p-4 rounded-lg max-w-[95%] lg:max-w-[70%] shadow-md`}
                                 >
-                                    <p className="font-poppins1 text-[14px] text-justify">{msg.content}</p>
+                                    <p className="font-poppins1 text-[10px] lg:text-[14px] text-justify">{msg.content}</p>
                                 </div>
                             </div>
                         ))}
@@ -90,32 +90,32 @@ const Satybot = () => {
                     </div>
                     {showSuggestions && (
                         <>
-                            <h1 className='text-[#56637E] font-poppins1 text-[16px] text-start'>
+                            <h1 className='text-[#56637E] font-poppins1 text-[14px] lg:text-[16px] text-start'>
                                 Suggestions on what to ask Our AI
                             </h1>
                             <div className="flex justify-start gap-4 items-center mt-4">
                                 <button
                                     onClick={() => handleAsk('What can I ask you to do?')}
-                                    className='font-poppins1 bg-white px-2 cursor-pointer py-3 rounded-full text-[12px]'
+                                    className='font-poppins1 bg-white lg:px-2 p-2 rounded-md cursor-pointer lg:py-3 lg:rounded-full text-[8px] lg:text-[12px]'
                                 >
                                     What can I ask you to do?
                                 </button>
                                 <button
                                     onClick={() => handleAsk('How can you help me with my project?')}
-                                    className='font-poppins1 bg-white px-2 cursor-pointer py-3 rounded-full text-[12px]'
+                                    className='font-poppins1 bg-white lg:px-2 p-2 rounded-md cursor-pointer lg:py-3 lg:rounded-full text-[8px] lg:text-[12px]'
                                 >
                                     How can you help me with my project?
                                 </button>
                                 <button
                                     onClick={() => handleAsk('Tell me about your capabilities')}
-                                    className='font-poppins1 bg-white px-2 cursor-pointer py-3 rounded-full text-[12px]'
+                                    className='font-poppins1 bg-white lg:px-2 p-2 rounded-md cursor-pointer lg:py-3 lg:rounded-full text-[8px] lg:text-[12px]'
                                 >
                                     Tell me about your capabilities
                                 </button>
                             </div>
                         </>
                     )}
-                    <div className="flex justify-center items-center w-full bg-white h-[80px] px-6 rounded-xl shadow-md mt-4">
+                    <div className="flex justify-center items-center w-full bg-white h-[80px] px-4 lg:px-6 rounded-xl shadow-md mt-4">
                         <input
                             type="text"
                             placeholder='Ask me anything about your mental health'
@@ -124,13 +124,13 @@ const Satybot = () => {
                                 setPrompt(e.target.value);
                                 if (e.target.value.trim()) setShowSuggestions(false);
                             }}
-                            className='w-full outline-none border-none font-poppins1 text-[14px]'
+                            className='w-full outline-none pr-4 border-none font-poppins1 text-[12px] lg:text-[14px]'
                         />
                         <img
                             onClick={handleSubmit}
                             src={send}
                             alt="Send"
-                            className='cursor-pointer w-[25px]'
+                            className='cursor-pointer lg:w-[25px] w-[20px]'
                         />
                     </div>
                 </div>

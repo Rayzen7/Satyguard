@@ -8,16 +8,36 @@
     src: url('/font/Poppins-SemiBold.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-  }
+}
+
 @font-face {
     font-family: 'poppins1';
     src: url('/font/Poppins-Medium.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-  }
+}
+
 @font-face {
     font-family: 'poppins2';
     src: url('/font/Poppins-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+html::-webkit-scrollbar {
+  width: 12px; 
+  height: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #C305FF; 
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #aa02dd; 
+}
