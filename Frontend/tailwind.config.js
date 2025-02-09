@@ -38,6 +38,10 @@ export default {
           from: { opacity: 1 },
           to: { opacity: 0 }
         },
+        moveIn: {
+          from: { width: '0%' },
+          to: { width: 'full' }
+        }
       },
       animation: {
           moveRight: 'moveRight 1s ease-in-out forwards',
@@ -45,6 +49,7 @@ export default {
           move: 'move 10s infinite',
           fadeIn: 'fadeIn 0.5s forwards',
           fadeOut: 'fadeOut 0.5s forwards',
+          moveIn: 'moveIn 2s forwards'
         },
       },
       colors: {

@@ -34,7 +34,7 @@ const Middle = () => {
                         <p className='font-poppins1 text-[17px] lg:text-[20px] text-purple'>{message}%</p>
                     </div>
                     <div className="w-full h-[10px] lg:h-[16px] bg-white rounded-full">
-                        <div className="bg-[#FFF673] h-[10px] lg:h-[16px] rounded-full transition-all duration-150" style={{width: `${message}%`}}></div>
+                        <div className="bg-[#FFF673] h-[10px] lg:h-[16px] rounded-full transition-all animate-moveIn w-0 duration-150" style={{width: `${message}%`}}></div>
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center mt-8">

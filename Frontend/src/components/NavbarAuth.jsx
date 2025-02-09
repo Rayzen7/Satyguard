@@ -5,7 +5,7 @@ import list from '/image/list.png';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './CSS/Navbar.css';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 
 const NavbarAuth = () => {
     const location = useLocation();
@@ -109,6 +109,7 @@ const NavbarAuth = () => {
             <Link to='/Downloads'><li><button className='font-poppins2 border-2 lg:mt-0 mt-10 rounded-2xl lg:px-8 lg:py-2 px-3 py-2 hover:scale-90 transition-all'>Download</button></li></Link>
         </ul>
         <img src={list} alt="" className='lg:w-[20px] h-auto w-[16px] relative z-20 cursor-pointer icon' onClick={toggleList}/>
+        <ToastContainer/>
     </div>
   )
 }
