@@ -24,17 +24,22 @@ const Login = () => {
             const token = response.data.token;
             localStorage.setItem('token', token);
 
-            const userRole = response.data.user;
-            console.log(userRole);
-
             toast.success(response.data.message, {
                 theme: 'colored',
                 autoClose: 2000
             });
 
-            setTimeout(() => {
-                navigate('/');
-            }, 3000);
+            const userRole = response.data.user.role_id;
+            if (userRole === 1) {
+                setTimeout(() => {
+                    navigate('/Admin');
+                }, 3000);
+            } else if (userRole === 2) {
+                setTimeout(() => {
+                    navigate('/');
+                }, 3000);
+            }
+
         } catch (error) {
             toast.error(error.response.data.message, {
                 theme: 'colored',
