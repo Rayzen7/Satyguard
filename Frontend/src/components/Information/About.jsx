@@ -6,6 +6,7 @@ import winnerIcon from '/image/information/winner.png'
 import safetyIcon from '/image/information/safety.png'
 import peopleIcon from '/image/information/people.png'
 import drawIcon from '/image/information/draw.png'
+import love from '/image/information/love.png'
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
         <div className='text-center mt-[120px] w-full h-[20vh] mb-[90px] lg:mb-[140px] flex items-center flex-col' data-aos="fade-up" data-aos-duration="800">
             <h1 className='font-poppins lg:text-[30px] text-[18px] lg:px-0 px-8'>Improve your security and find the access you need with 
             <br />SatyGuard.</h1>
+            <img src={love} alt="" className='absolute w-[150px] lg:w-[250px] h-auto -z-20 top-[25%] lg:top-[35%]' data-aos="fade-up" data-aos-duration="800" />
         </div>
         <div className='flex lg:flex-row flex-col justify-between items-center px-[30px] lg:px-[90px]'>
             <div>

@@ -7,6 +7,7 @@ import Contacts from '../views/Contacts.jsx';
 import ScrollTop from '../components/ScrollTop.jsx';
 import Login from '../views/auth/Login.jsx';
 import Register from '../views/auth/Register.jsx';
+import Satybot from '../views/Satybot.jsx';
 
 const Router = () => {
   return (
@@ -18,6 +19,7 @@ const Router = () => {
             <Route path='/Information' element={<Information/>}/>
             <Route path='/Downloads' element={<Downloads/>}/>
             <Route path='/Contacts' element={<Contacts/>}/>
+            <Route path='/Satybot' element={<Satybot/>}/>
 
             {/* Auth */}
             <Route path='/Login' element={<Login/>}/>
