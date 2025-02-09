@@ -78,9 +78,11 @@ class UserController extends Controller
         $email = User::where('email', $request->email)->first();
         if (Auth::attempt($request->only('email', 'password'))) {
             $token = $email->createToken('access_token')->plainTextToken;
+            $user = Auth::user();
             return response()->json([
                 'message' => 'Login Success',
-                'token' => $token
+                'token' => $token,
+                'user' => $user
             ], 200);
         }
 

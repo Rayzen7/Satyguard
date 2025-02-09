@@ -16,8 +16,8 @@ const Features = () => {
         </div>
         <div className='mt-10'>
             <div className='flex lg:flex-row flex-col justify-center items-center flex-wrap gap-14' data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                { datafeatures.map((item, e) => (
-                    <div key={e.id} className='bg-white border-[4px] border-purple lg:w-[500px] w-[280px] lg:h-[240px] h-[380px] rounded-[18px] flex lg:flex-row flex-col items-center justify-around p-4 cursor-pointer hover group hover:-translate-y-3 transition-all duration-300 hover:drop-shadow-xl'>
+                { datafeatures.map((item) => (
+                    <div key={item.id} className='bg-white border-[4px] border-purple lg:w-[500px] w-[280px] lg:h-[240px] h-[380px] rounded-[18px] flex lg:flex-row flex-col items-center justify-around p-4 cursor-pointer hover group hover:-translate-y-3 transition-all duration-300 hover:drop-shadow-xl'>
                         <img src={item.img} alt="" className='bg-white rounded-[9px] group-hover:-translate-y-4 transition-all duration-300 w-[120px] lg:w-[130px] h-auto'/>
                         <div className='lg:text-right text-center font-poppins flex flex-col justify-center lg:items-end items-center'>
                             <h1 className='text-[24px] lg:w-[250px] w-auto lg:pb-0 pb-2 relative z-10'>{item.head}</h1>

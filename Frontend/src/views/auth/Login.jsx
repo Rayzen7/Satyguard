@@ -24,6 +24,9 @@ const Login = () => {
             const token = response.data.token;
             localStorage.setItem('token', token);
 
+            const userRole = response.data.user;
+            console.log(userRole);
+
             toast.success(response.data.message, {
                 theme: 'colored',
                 autoClose: 2000
