@@ -5,6 +5,7 @@ import Issue from '../components/Information/Issue.jsx'
 import Charts from '../components/Information/Chart.jsx'
 import { NavbarUser } from './auth/NavbarUser.jsx'
 import Article from '../components/Information/Article.jsx'
+import Video from '../components/Information/Video.jsx'
 
 const Information = () => {
   return (
@@ -16,6 +17,7 @@ const Information = () => {
         <Issue/>
         <Charts/>
         <Article/>
+        <Video/>
         <Footer/>
     </div>
   )
