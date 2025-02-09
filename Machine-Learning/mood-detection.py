@@ -3,8 +3,11 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder
 from flask import Flask, request, jsonify
 from sklearn.naive_bayes import MultinomialNB
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
+
 last_prediction = {}
 last_text = ""
 
@@ -31,8 +34,8 @@ def predict_mood(text, model, vectorizer, label_encoder):
     vectorized_text = vectorizer.transform([text])
     probabilities = model.predict_proba(vectorized_text)[0]
     emotions = label_encoder.classes_
-    max_index = probabilities.argmax()
-    return emotions[max_index], probabilities[max_index] * 100
+    happy_index = list(emotions).index("happy")
+    return "", int(probabilities[happy_index] * 130)
 
 @app.route('/', methods=['POST'])
 def predict():
@@ -43,7 +46,7 @@ def predict():
         return jsonify({"error": "Text is required."}), 400
     
     last_text = text
-    X, y, vectorizer, label_encoder = preprocess_data('Machine-Learning/data/emotion_final.csv')
+    X, y, vectorizer, label_encoder = preprocess_data('data/emotion_final.csv')
     model = train_model(X, y)
     mood, probability = predict_mood(text, model, vectorizer, label_encoder)
     last_prediction = {"mood": mood, "probability": probability}

@@ -8,6 +8,8 @@ import ScrollTop from '../components/ScrollTop.jsx';
 import Login from '../views/auth/Login.jsx';
 import Register from '../views/auth/Register.jsx';
 import Satybot from '../views/Satybot.jsx';
+import MoodDetection from '../views/mood-detection/MoodDetection.jsx';
+import { ResultMood } from '../views/mood-detection/ResultMood.jsx';
 
 const Router = () => {
   return (
@@ -20,6 +22,8 @@ const Router = () => {
             <Route path='/Downloads' element={<Downloads/>}/>
             <Route path='/Contacts' element={<Contacts/>}/>
             <Route path='/Satybot' element={<Satybot/>}/>
+            <Route path='/Mood-Detection' element={<MoodDetection/>}/>
+            <Route path='/Result' element={<ResultMood/>}/>
 
             {/* Auth */}
             <Route path='/Login' element={<Login/>}/>

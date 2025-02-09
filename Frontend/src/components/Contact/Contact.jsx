@@ -36,7 +36,7 @@ const Contact = () => {
   return (
     <div className='pt-[120px] pb-32 flex lg:flex-row flex-col justify-between lg:px-24 px-0 lg:items-start items-center'>
         <div className='' data-aos="fade-up" data-aos-duration="800">
-            <h1 className='font-poppins lg:text-[45px] text-[35px] lg:text-start text-center'>Contact</h1>
+            <h1 className='font-poppins lg:text-[45px] text-[35px] lg:text-start text-center'>Get In Touch</h1>
             <form action="">
                 <div className='flex lg:flex-row flex-col items-center lg:gap-16 gap-5 mt-7'>
                     <input 

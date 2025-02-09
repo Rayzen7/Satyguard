@@ -20,7 +20,7 @@ const Hero = () => {
           </div>
           <img src={Pics} alt="" className='lg:w-[450px] h-auto w-[230px]'/>
       </div>
-      <Link data-aos="fade-up" data-aos-duration="800">
+      <Link to='/Mood-Detection' data-aos="fade-up" data-aos-duration="800">
         <div className='hover:scale-[95%] hover:opacity-80 duration-500 transition-all h-full cursor-pointer'>
           <img src={moodDetection} alt="" className='w-full animate-move'/>
         </div>
