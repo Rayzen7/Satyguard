@@ -59,7 +59,7 @@ npm install
 ```
 
 <p align="justify">
-    Kemudiam import database satyguard.sql ke dalam mysql dengan dalam satyguard, lalu hubungkan storage backend dengan mengetikkan perintah
+    Kemudian import database satyguard.sql ke dalam mysql dengan nama satyguard, lalu hubungkan storage backend dengan mengetikkan perintah
 </p>
 
 ```sh 
@@ -72,4 +72,37 @@ php artisan storage:link
 
 ```sh 
 php artisan serve --port=8000
+```
+
+### 3. Menjalankan Machine Learning
+<p align="justify">
+    Untuk menjalankan kode Machine Learning. Masuk ke dalam folder Backend dengan mengetikkan path berikut
+</p>
+
+```sh 
+cd ./Machine-Learning
+```
+
+<p align="justify">
+    Setelah itu install library yang diperlukan python terlebih dahulu
+</p>
+
+```sh 
+pip install flask flask-cors google-generativeai pandas scikit-learn
+```
+
+<p align="justify">
+    Jalankan chatbot.py dengan perintah di bawah ini
+</p>
+
+```sh 
+python chatbot.py
+```
+
+<p align="justify">
+    Jalankan juga mood-detection.py dengan perintah di bawah ini
+</p>
+
+```sh 
+python mood-detection.py
 ```
