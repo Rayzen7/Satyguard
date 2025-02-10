@@ -10,3 +10,10 @@ SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan d
     <img src="./Readme/icon/react.png" width="70" hspace="7"/>
     <img src="./Readme/icon/python.png" width="70" hspace="7"/>
 </div>
+
+## Cara Menjalankan Website
+<p align="justify">
+    Untuk menjalankan kode Frontend. Masuk ke dalam folder Frontend dengan mengetikkan path berikut
+    ```sh
+    npm install
+</p>
