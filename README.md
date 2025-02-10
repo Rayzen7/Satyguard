@@ -6,7 +6,7 @@ SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan d
 
 ## Framework & Bahasa yang Digunakan
 <div align="center">
-    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="200"/>
-    <img src="./Readme/icon/react.png" width="150"/>
-    <img src="./Readme/icon/python.png" width="150"/>
+    <img src="./Readme/icon/laravel.png" width="120"/>
+    <img src="./Readme/icon/react.png" width="120"/>
+    <img src="./Readme/icon/python.png" width="120"/>
 </div>
