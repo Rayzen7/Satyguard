@@ -112,4 +112,4 @@ python mood-detection.py
     Landing page Home, Information, dan Download
 </p>
 
-<video src="./Readme/video/video-1.mp4" width="400"></video>
+<img src="./Readme/video/video-1.gif" width="500"/>
