@@ -106,3 +106,10 @@ python chatbot.py
 ```sh 
 python mood-detection.py
 ```
+
+## Dokumentasi fitur-fitur Satyguard
+<p align="justify">
+    Landing page Home, Information, dan Download
+</p>
+
+<video src="./Readme/video/video-1.mp4" width="400"></video>
