@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('video');
             $table->string('title');
             $table->text('desc');
+            $table->text('created_by');
             $table->timestamps();
         });
     }

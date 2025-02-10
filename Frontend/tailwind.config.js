@@ -60,6 +60,12 @@ export default {
         pink: "#FFA7B2",
         gray1: "#E3E3E3",
         primary: 'linear-gradient(138deg, rgba(195,5,255,1) 15%, rgba(255,167,178,1) 92%)',
+        green: '#4CAF50',
+        greenHover: '#43A047',
+        blue: '#2196F3',
+        blueHover: '#1E88E5',
+        red: '#F44336',
+        redHover: '#E53935'
       },
   },
   plugins: [],

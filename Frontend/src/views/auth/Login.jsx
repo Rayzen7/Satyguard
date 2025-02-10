@@ -32,7 +32,7 @@ const Login = () => {
             const userRole = response.data.user.role_id;
             if (userRole === 1) {
                 setTimeout(() => {
-                    navigate('/Admin');
+                    navigate('/Admin/Education');
                 }, 3000);
             } else if (userRole === 2) {
                 setTimeout(() => {

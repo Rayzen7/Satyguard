@@ -13,6 +13,7 @@ class Video extends Model
     protected $fillable = [
         'video',
         'title',
-        'desc'
+        'desc',
+        'created_by'
     ];
 }

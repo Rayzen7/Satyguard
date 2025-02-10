@@ -36,6 +36,7 @@ class VideoController extends Controller
             'title' => 'required',
             'desc' => 'required',
             'video' => 'required',
+            'created_by' => 'required',
         ]);
 
         if ($validateData->fails()) {
@@ -47,7 +48,8 @@ class VideoController extends Controller
         Video::create([
             'title' => $request->title,
             'desc' => $request->desc,
-            'video' => $request->video
+            'video' => $request->video,
+            'created_by' => $request->created_by
         ]);
 
         return response()->json([
@@ -84,6 +86,7 @@ class VideoController extends Controller
             'title' => 'required',
             'desc' => 'required',
             'video' => 'required',
+            'created_by' => 'required',
         ]);
 
         if ($validateData->fails()) {
@@ -95,7 +98,8 @@ class VideoController extends Controller
         $video->update([
             'title' => $request->title,
             'desc' => $request->desc,
-            'video' => $request->video
+            'video' => $request->video,
+            'created_by' => $request->created_by
         ]);
 
         return response()->json([
