@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VideoController;
@@ -31,6 +32,10 @@ Route::middleware('auth-token')->group(function() {
         Route::get('/video/{id}', [VideoController::class, 'show']);
         Route::put('/video/{id}', [VideoController::class, 'update']);
         Route::delete('/video/{id}', [VideoController::class, 'destroy']);
+
+        Route::get('/category', [CategoryController::class, 'index']);
+        Route::post('/category', [CategoryController::class, 'store']);
+        Route::delete('/category/{id}', [CategoryController::class, 'destroy']);
     });
 
 });

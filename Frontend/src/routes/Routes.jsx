@@ -14,6 +14,8 @@ import DashboardVideo from '../views/admin/DashboardVideo.jsx';
 import AddVideo from '../views/admin/AddVideo.jsx';
 import EditVideo from '../views/admin/EditVideo.jsx';
 import DashboardMessage from '../views/admin/DashboardMessage.jsx';
+import DashboardCategory from '../views/admin/DashboardCategory.jsx';
+import AddCategory from '../views/admin/AddCategory.jsx';
 
 const Router = () => {
   return (
@@ -34,6 +36,8 @@ const Router = () => {
             <Route path='/Admin/Education/Add' element={<AddVideo/>}/>
             <Route path='/Admin/Education/Edit/:id' element={<EditVideo/>}/>
             <Route path='/Admin/Message' element={<DashboardMessage/>}/>
+            <Route path='/Admin/Category' element={<DashboardCategory/>}/>
+            <Route path='/Admin/Category/Add' element={<AddCategory/>}/>
 
             {/* Auth */}
             <Route path='/Login' element={<Login/>}/>
