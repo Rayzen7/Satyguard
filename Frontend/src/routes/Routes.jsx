@@ -16,6 +16,8 @@ import EditVideo from '../views/admin/EditVideo.jsx';
 import DashboardMessage from '../views/admin/DashboardMessage.jsx';
 import DashboardCategory from '../views/admin/DashboardCategory.jsx';
 import AddCategory from '../views/admin/AddCategory.jsx';
+import DashboardArticle from '../views/admin/DashboardArticle.jsx';
+import AddArticle from '../views/admin/AddArticle.jsx';
 
 const Router = () => {
   return (
@@ -38,6 +40,8 @@ const Router = () => {
             <Route path='/Admin/Message' element={<DashboardMessage/>}/>
             <Route path='/Admin/Category' element={<DashboardCategory/>}/>
             <Route path='/Admin/Category/Add' element={<AddCategory/>}/>
+            <Route path='/Admin/Article' element={<DashboardArticle/>}/>
+            <Route path='/Admin/Article/Add' element={<AddArticle/>}/>
 
             {/* Auth */}
             <Route path='/Login' element={<Login/>}/>
