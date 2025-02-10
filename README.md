@@ -1,5 +1,5 @@
 # SatyGuard
-<img src="./Readme/head.png" width="600" style="margin: auto;"/>
-<p style="text-align: center; margin-top: 4px;">
+<img src="./Readme/head.png" width="650"/>
+<p style="text-align: justify; margin-top: 4px;">
 SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan dan dukungan psikologis bagi korban kekerasan serta meningkatkan kesadaran kesehatan mental. Website ini menyediakan fitur utama yaitu chatbot untuk konsultasi kesehatan mental dan mood detector berbasis AI yang menganalisis kondisi emosional pengguna. Selain itu, SatyGuard juga menghadirkan artikel edukatif dan komunitas pemulihan untuk membantu pengguna dalam mengatasi trauma. Dengan pendekatan inovatif yang menggabungkan teknologi dan psikologi, platform ini bertujuan menciptakan lingkungan yang lebih aman dan mendukung bagi individu yang rentan terhadap kekerasan dan gangguan mental.
 </p>
