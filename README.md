@@ -30,7 +30,7 @@ npm install
 ```
 
 <p align="justify">
-    Lalu jalankan websitenya dengan kode :
+    Lalu jalankan Frontendnya dengan perintah di bawah ini
 </p>
 
 ```sh 
@@ -47,7 +47,7 @@ cd ./Backend
 ```
 
 <p align="justify">
-    Setelah itu install vendor dan node modules dengan kode berikut ini
+    Setelah itu install vendor dan node modules dengan perintah berikut ini
 </p>
 
 ```sh 
@@ -56,4 +56,20 @@ composer install
 
 ```sh 
 npm install
+```
+
+<p align="justify">
+    Kemudiam import database satyguard.sql ke dalam mysql dengan dalam satyguard, lalu hubungkan storage backend dengan mengetikkan perintah
+</p>
+
+```sh 
+php artisan storage:link
+```
+
+<p align="justify">
+    Jalankan Backendnya dengan perintah di bawah ini
+</p>
+
+```sh 
+php artisan serve --port=8000
 ```
