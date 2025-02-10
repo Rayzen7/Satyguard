@@ -38,7 +38,8 @@ class ArticleController extends Controller
             'title' => 'required',
             'desc' => 'required',
             'link' => 'required',
-            'category_id' => 'required|exists:categories,id',
+            'category_id' => 'required|array',
+            'category_id.*' => 'exists:categories,id',
         ]);
 
         if ($validateData->fails()) {
@@ -55,12 +56,7 @@ class ArticleController extends Controller
             'link' => $request->link,
         ]);
 
-        $categoryIds = $request->input('category_id');
-        if (is_string($categoryIds)) {
-            $categoryIds = explode(',', $categoryIds);
-        }
-        $categoryIds = array_map('intval', $categoryIds); 
-        $article->category()->attach($categoryIds);
+        $article->category()->attach($request->category_id);
 
         return response()->json([
             'message' => 'create article success'

@@ -10,8 +10,8 @@ const AddArticle = () => {
     const [title, setTitle] = useState('');
     const [desc, setDesc] = useState('');
     const [image, setImage] = useState('');
+    const [category_id, setCategoryId] = useState([]);
     const [category, setCategory] = useState([]);
-    const [selectedCategory, setSelectedCategory] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -32,6 +32,11 @@ const AddArticle = () => {
         fetchCategory();
     }, [token]);
 
+    const handleCategory = (e) => {
+        const selectedCategories = Array.from(e.target.selectedOptions, option => option.value);
+        setCategoryId(selectedCategories);
+    }
+
     const handleSubmit = async(e) => {
         e.preventDefault();
         const formData = new FormData();
@@ -39,13 +44,15 @@ const AddArticle = () => {
         formData.append('title', title);
         formData.append('desc', desc);
         formData.append('image', image);
-        formData.append('category_id', JSON.stringify(selectedCategory));
+        category_id.forEach((id, index) => {
+            formData.append(`category_id[${index}]`, id);
+        });
 
         try {
             const response = await axios.post('http://localhost:8000/api/article', formData, {
                 headers: {
                     Authorization: `Bearer ${token}`,
-                    Accept: 'multipart/form-data'
+                    'Content-Type': 'multipart/form-data'
                 }
             });
 
@@ -55,7 +62,7 @@ const AddArticle = () => {
             });
 
             setTimeout(() => {
-                navigate('/Admin/Education');
+                navigate('/Admin/Article');
             }, 3000);
 
         } catch (error) {
@@ -118,11 +125,12 @@ const AddArticle = () => {
                 <div className="flex justify-between items-center gap-1">
                     <label className='font-poppins1 text-[16px]'>Category :</label>
                     <select className='font-poppins2 text-[16px] cursor-pointer' 
-                      value={selectedCategory} 
-                      onChange={(e) => {const selectedOptions = Array.from(e.target.selectedOptions, (option) => parseInt(option.value)); setSelectedCategory(selectedOptions)}}
+                      value={category_id} 
+                      multiple
+                      onChange={handleCategory}
                     >
                         {category.map((categories) => (
-                            <option value={categories.id} key={categories.id}>{categories.id} {categories.name}</option>
+                            <option value={categories.id} key={categories.id}> {categories.name}</option>
                         ))}
                     </select>
                 </div>
