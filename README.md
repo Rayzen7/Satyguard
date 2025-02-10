@@ -12,18 +12,47 @@ SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan d
 </div>
 
 ## Cara Menjalankan Website
-### Menjalankan Kode Frontend
+### 1. Menjalankan Kode Frontend
 <p align="justify">
     Untuk menjalankan kode Frontend. Masuk ke dalam folder Frontend dengan mengetikkan path berikut
 </p>
 
 ```sh 
-./Frontend
+cd ./Frontend
 ```
 
 <p align="justify">
-    Setelah itu jalankan kodenya dengan mengetikkan
+    Setelah itu install node modules dengan mengetikkan perintah dibawah ini
 </p>
+
+```sh 
+npm install
+```
+
+<p align="justify">
+    Lalu jalankan websitenya dengan kode :
+</p>
+
+```sh 
+npm run dev --port=5173
+```
+
+### 2. Menjalankan Kode Backend
+<p align="justify">
+    Untuk menjalankan kode Backend. Masuk ke dalam folder Backend dengan mengetikkan path berikut
+</p>
+
+```sh 
+cd ./Backend
+```
+
+<p align="justify">
+    Setelah itu install vendor dan node modules dengan kode berikut ini
+</p>
+
+```sh 
+composer install
+```
 
 ```sh 
 npm install
