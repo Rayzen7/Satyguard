@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 import axios from 'axios'
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
-const AddArticle = () => {
+const EditArticle = () => {
     const token = localStorage.getItem('token');
     const [link, setLink] = useState('');
     const [title, setTitle] = useState('');
@@ -12,6 +12,7 @@ const AddArticle = () => {
     const [image, setImage] = useState('');
     const [category_id, setCategoryId] = useState([]);
     const [category, setCategory] = useState([]);
+    const { id } = useParams();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -29,8 +30,26 @@ const AddArticle = () => {
             }
         }
 
+        const fetchArticle = async() => {
+            try {
+                const response = await axios.get(`http://localhost:8000/api/article/${id}`, {
+                    headers: {
+                        Authorization: `Bearer ${token}`
+                    }
+                });
+
+                const getId = response.data.article;
+                setLink(getId.link);
+                setTitle(getId.title);
+                setDesc(getId.desc);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        fetchArticle();
         fetchCategory();
-    }, [token]);
+    }, [token, id]);
 
     const handleCategory = (e) => {
         const selectedCategories = Array.from(e.target.selectedOptions, option => option.value);
@@ -49,7 +68,7 @@ const AddArticle = () => {
         });
 
         try {
-            const response = await axios.post('http://localhost:8000/api/article', formData, {
+            const response = await axios.post(`http://localhost:8000/api/article/${id}`, formData, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                     'Content-Type': 'multipart/form-data'
@@ -76,7 +95,7 @@ const AddArticle = () => {
   return (
     <div className='bg-[#EEEEEE] w-full min-h-[100vh] flex flex-col justify-center items-center'>
         <div className="bg-white w-[320px] lg:w-[600px] min-h-[530px] my-12 rounded-lg p-8 flex flex-col justify-center items-center">
-            <h1 className='font-poppins text-purple text-[30px]'>Add Article</h1>
+            <h1 className='font-poppins text-purple text-[30px]'>Edit Article</h1>
             <div className="mt-12 flex flex-col gap-8">
                 <div className="flex flex-col gap-1">
                     <label className='font-poppins1 text-[16px]'>Link Article :</label>
@@ -136,7 +155,7 @@ const AddArticle = () => {
                 </div>
             </div>
             <div className="flex flex-col gap-4 mt-12">
-                <button onClick={handleSubmit} className='font-poppins1 text-white bg-green hover:bg-greenHover w-[260px] lg:w-[400px] h-[50px] rounded-md'>Add</button>
+                <button onClick={handleSubmit} className='font-poppins1 text-white bg-green hover:bg-greenHover w-[260px] lg:w-[400px] h-[50px] rounded-md'>Edit</button>
                 <a href="/Admin/Article">
                     <button className='font-poppins1 text-white bg-blue hover:bg-blueHover w-[260px] lg:w-[400px] h-[50px] rounded-md'>Back</button>
                 </a>
@@ -147,4 +166,4 @@ const AddArticle = () => {
   )
 }
 
-export default AddArticle
+export default EditArticle

@@ -18,6 +18,7 @@ import DashboardCategory from '../views/admin/DashboardCategory.jsx';
 import AddCategory from '../views/admin/AddCategory.jsx';
 import DashboardArticle from '../views/admin/DashboardArticle.jsx';
 import AddArticle from '../views/admin/AddArticle.jsx';
+import EditArticle from '../views/admin/EditArticle.jsx';
 
 const Router = () => {
   return (
@@ -42,6 +43,7 @@ const Router = () => {
             <Route path='/Admin/Category/Add' element={<AddCategory/>}/>
             <Route path='/Admin/Article' element={<DashboardArticle/>}/>
             <Route path='/Admin/Article/Add' element={<AddArticle/>}/>
+            <Route path='/Admin/Article/Edit/:id' element={<EditArticle/>}/>
 
             {/* Auth */}
             <Route path='/Login' element={<Login/>}/>
