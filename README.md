@@ -12,6 +12,11 @@ SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan d
 </div>
 
 ## Cara Menjalankan Website
+
+<p align="justify">
+    Untuk menjalankan Website pastikan seluruh kode baik frontend, backend, dan machine learning dapat berjalan dengan baik
+</p>
+
 ### 1. Menjalankan Kode Frontend
 <p align="justify">
     Untuk menjalankan kode Frontend. Masuk ke dalam folder Frontend dengan mengetikkan path berikut
@@ -109,7 +114,11 @@ python mood-detection.py
 
 ## Dokumentasi fitur-fitur Satyguard
 <p align="justify">
-    Landing page Home, Information, dan Download
+    1. Landing page Home, Information, dan Download
 </p>
 
-<img src="./Readme/video/video-1.gif" width="500"/>
+<img src="./Readme/video/video-1.gif" width="550"/>
+
+<p align="justify">
+    2. Fitur Satybot dan Contact Me
+</p>
