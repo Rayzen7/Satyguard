@@ -5,7 +5,7 @@ SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan d
 </p>
 
 ## Framework & Bahasa yang Digunakan
-<div align="center" height="400">
+<div align="center">
     <img src="./Readme/icon/laravel.png" width="70" hspace="7"/>
     <img src="./Readme/icon/react.png" width="70" hspace="7"/>
     <img src="./Readme/icon/python.png" width="70" hspace="7"/>
