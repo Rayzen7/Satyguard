@@ -9,6 +9,10 @@ SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan d
     <img src="./Readme/icon/laravel.png" width="70" hspace="7"/>
     <img src="./Readme/icon/react.png" width="70" hspace="7"/>
     <img src="./Readme/icon/python.png" width="70" hspace="7"/>
+    <img src="./Readme/icon/javascript.png" width="70" hspace="7"/>
+    <img src="./Readme/icon/tailwind.png" width="70" hspace="7"/>
+    <img src="./Readme/icon/php.png" width="70" hspace="7"/>
+    <img src="./Readme/icon/mysql.png" width="70" hspace="7"/>
 </div>
 
 ## Cara Menjalankan Website
@@ -114,11 +118,15 @@ python mood-detection.py
 
 ## Dokumentasi fitur-fitur Satyguard
 <p align="justify">
-    1. Landing page Home, Information, dan Download
+    1. Landing page Home, Information, dan Download <br/>
+    Di landing page ini terdapat berbagai penjelasan tentang kesehatan mental yang tentunya kami sajikan secara informatif dan interaktif baik berbentuk card, accordion, dan lain-lain. Kami juga menampilkan beberapa informasi dan video edukasi tentang kesehatan mental dari sumber yang terpercaya serta menampilkan informasi dalam berbentuk grafik dengan menggunakan Chart JS.
 </p>
 
 <img src="./Readme/video/video-1.gif" width="550"/>
 
 <p align="justify">
-    2. Fitur Satybot dan Contact Me
+    2. Fitur Contact Me & Autentikasi Register dan Login <br/>
+    Di fitur Contact Me, pengguna dapat memberikan pendapat serta saran mengenai website ini. Fitur register dan login pengguna dapat membuat akun baru dengan fitur register serta pengguna dapat login dengan menggunakan akunnya melalui fitur login.
 </p>
+
+<img src="./Readme/video/video-2.gif" width="550"/>
