@@ -145,7 +145,7 @@ python mood-detection.py
     Di dalam Panel Admin, Admin bisa mengatur isi dari Artikel, Video, Kategori Artikel, dan Pesan. Panel Admin juga dilengkapi sistem middleware Role, jadi jika user yang bukan admin mencoba masuk ke panel admin maka akan langsung diarahkan ke Login page kembali. <br/>
     - Untuk fiturnya sebagai berikut. <br/>
     1. Artikel: Admin bisa Create, Read, Update, Delete <br/>
-    2. Kategori Artikel: Admin bisa Create, Read, Update, Delete <br/>
+    2. Kategori Artikel: Admin bisa Create, Read, Delete <br/>
     3. Video Edukasi: Admin bisa Create, Read, Update, Delete <br/>
     4. Pesan: Admin hanya bisa Read<br/>
 </p>
