@@ -130,3 +130,10 @@ python mood-detection.py
 </p>
 
 <img src="./Readme/video/video-2.gif" width="550"/>
+
+<p align="justify">
+    3. Fitur Satybot dan Mood Detection <br/>
+    Di fitur Satybot, pengguna dapat menggunakan AI Chatbot dari SatyGuard untuk mencari informasi, meminta saran, curhat, dan lain sebagainya. Fitur Mood Detection, pengguna dapat mengetahui moodnya dengan cara pengguna mengetikkan sebuah teks mengenai perasaan yang sedang dialaminya. Setelah pengguna mengetikkan teksnya, maka hasil dari AI tersebut akan muncul dan jika mood pengguna sedang tidak baik-baik aja maka AI tersebut akan memberikan saran kepada pengguna supaya kondisi mood pengguna dapat membaik
+</p>
+
+<img src="./Readme/video/video-3.gif" width="550"/>
