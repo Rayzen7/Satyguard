@@ -5,7 +5,7 @@ SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan d
 </p>
 
 ## Framework & Bahasa yang Digunakan
-<div align="center">
+<div align="center" height="400">
     <img src="./Readme/icon/laravel.png" width="70" hspace="7"/>
     <img src="./Readme/icon/react.png" width="70" hspace="7"/>
     <img src="./Readme/icon/python.png" width="70" hspace="7"/>
@@ -126,7 +126,8 @@ python mood-detection.py
 
 <p align="justify">
     2. Fitur Contact Me & Autentikasi Register dan Login <br/>
-    Di fitur Contact Me, pengguna dapat memberikan pendapat serta saran mengenai website ini. Fitur register dan login pengguna dapat membuat akun baru dengan fitur register serta pengguna dapat login dengan menggunakan akunnya melalui fitur login.
+    Di fitur Contact Me, pengguna dapat memberikan pendapat serta saran mengenai website ini. Fitur register dan login pengguna dapat membuat akun baru dengan fitur register serta pengguna dapat login dengan menggunakan akunnya melalui fitur login. <br/>
+    - Untuk akun pengguna yang kami sediakan adalah: Email: user1@gmail.com | Password: user1
 </p>
 
 <img src="./Readme/video/video-2.gif" width="550"/>
@@ -137,3 +138,16 @@ python mood-detection.py
 </p>
 
 <img src="./Readme/video/video-3.gif" width="550"/>
+
+<p align="justify">
+    4. Panel Admin <br/>
+    - Untuk akun pengguna yang kami sediakan adalah: Email: admin1@gmail.com | Password: admin1 <br/>
+    Di dalam Panel Admin, Admin bisa mengatur isi dari Artikel, Video, Kategori Artikel, dan Pesan. Panel Admin juga dilengkapi sistem middleware Role, jadi jika user yang bukan admin mencoba masuk ke panel admin maka akan langsung diarahkan ke Login page kembali. <br/>
+    - Untuk fiturnya sebagai berikut. <br/>
+    1. Artikel: Admin bisa Create, Read, Update, Delete <br/>
+    2. Kategori Artikel: Admin bisa Create, Read, Update, Delete <br/>
+    3. Video Edukasi: Admin bisa Create, Read, Update, Delete <br/>
+    4. Pesan: Admin hanya bisa Read<br/>
+</p>
+
+<img src="./Readme/video/video-4.gif" width="550"/>
