@@ -23,16 +23,16 @@ SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan d
 - 🎥 **Video Edukatif**: Pelajari lebih lanjut tentang kesehatan mental melalui video informatif.  
 - 💡 **Fakta Menarik**: Temukan fakta unik dan bermanfaat tentang kesehatan mental.  
 
-## ERD Database
+## 🗂️ ERD Database  
 <img src="./Readme/ERD.png" width="550"/>
 
-## Cara Menjalankan Website
+## ⚡ Cara Menjalankan Website  
 
 <p align="justify">
     Untuk menjalankan Website pastikan seluruh kode baik frontend, backend, dan machine learning dapat berjalan dengan baik
 </p>
 
-### 1. Menjalankan Kode Frontend
+### 1️⃣ Menjalankan Kode Frontend  
 <p align="justify">
     Untuk menjalankan kode Frontend. Masuk ke dalam folder Frontend dengan mengetikkan path berikut
 </p>
@@ -57,7 +57,7 @@ npm install
 npm run dev --port=5173
 ```
 
-### 2. Menjalankan Kode Backend
+### 2️⃣ Menjalankan Kode Backend 
 <p align="justify">
     Untuk menjalankan kode Backend. Masuk ke dalam folder Backend dengan mengetikkan path berikut
 </p>
@@ -94,7 +94,7 @@ php artisan storage:link
 php artisan serve --port=8000
 ```
 
-### 3. Menjalankan Machine Learning
+### 3️⃣ Menjalankan Machine Learning  
 <p align="justify">
     Untuk menjalankan kode Machine Learning. Masuk ke dalam folder Backend dengan mengetikkan path berikut
 </p>
@@ -127,7 +127,7 @@ python chatbot.py
 python mood-detection.py
 ```
 
-## Dokumentasi fitur-fitur Satyguard
+## 📖 Dokumentasi Fitur-Fitur Satyguard  
 <p align="justify">
     1. Landing page Home, Information, dan Download <br/>
     Di landing page ini terdapat berbagai penjelasan tentang kesehatan mental yang tentunya kami sajikan secara informatif dan interaktif baik berbentuk card, accordion, dan lain-lain. Kami juga menampilkan beberapa informasi dan video edukasi tentang kesehatan mental dari sumber yang terpercaya serta menampilkan informasi dalam berbentuk grafik dengan menggunakan Chart JS.
