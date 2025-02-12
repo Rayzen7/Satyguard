@@ -129,14 +129,14 @@ python mood-detection.py
 
 ## 📖 Dokumentasi Fitur-Fitur Satyguard  
 <p align="justify">
-    1. Landing page Home, Information, dan Download <br/>
+    🔹 <strong>Landing page Home, Information, dan Download</strong> <br/>
     Di landing page ini terdapat berbagai penjelasan tentang kesehatan mental yang tentunya kami sajikan secara informatif dan interaktif baik berbentuk card, accordion, dan lain-lain. Kami juga menampilkan beberapa informasi dan video edukasi tentang kesehatan mental dari sumber yang terpercaya serta menampilkan informasi dalam berbentuk grafik dengan menggunakan Chart JS.
 </p>
 
 <img src="./Readme/video/video-1.gif" width="550"/>
 
 <p align="justify">
-    2. Fitur Contact Me & Autentikasi Register dan Login <br/>
+    🔹 <strong>Fitur Contact Me & Autentikasi Register dan Login</strong> <br/>
     Di fitur Contact Me, pengguna dapat memberikan pendapat serta saran mengenai website ini. Fitur register dan login pengguna dapat membuat akun baru dengan fitur register serta pengguna dapat login dengan menggunakan akunnya melalui fitur login. <br/>
     - Untuk akun pengguna yang kami sediakan adalah: Email: user1@gmail.com | Password: user1
 </p>
@@ -144,21 +144,21 @@ python mood-detection.py
 <img src="./Readme/video/video-2.gif" width="550"/>
 
 <p align="justify">
-    3. Fitur Satybot dan Mood Detection <br/>
-    Di fitur Satybot, pengguna dapat menggunakan AI Chatbot dari SatyGuard untuk mencari informasi, meminta saran, curhat, dan lain sebagainya. Fitur Mood Detection, pengguna dapat mengetahui moodnya dengan cara pengguna mengetikkan sebuah teks mengenai perasaan yang sedang dialaminya. Setelah pengguna mengetikkan teksnya, maka hasil dari AI tersebut akan muncul dan jika mood pengguna sedang tidak baik-baik aja maka AI tersebut akan memberikan saran kepada pengguna supaya kondisi mood pengguna dapat membaik
+    🔹 <strong>Fitur Satybot dan Mood Detection</strong> <br/>
+    Di fitur Satybot, pengguna dapat menggunakan AI Chatbot dari SatyGuard untuk mencari informasi, meminta saran, curhat, dan lain sebagainya. Fitur Mood Detection, pengguna dapat mengetahui moodnya dengan cara pengguna mengetikkan sebuah teks mengenai perasaan yang sedang dialaminya. Setelah pengguna mengetikkan teksnya, maka hasil dari AI tersebut akan muncul dan jika mood pengguna sedang tidak baik-baik aja maka AI tersebut akan memberikan saran kepada pengguna supaya kondisi mood pengguna dapat membaik.
 </p>
 
 <img src="./Readme/video/video-3.gif" width="550"/>
 
 <p align="justify">
-    4. Panel Admin <br/>
+    🔹 <strong>Panel Admin</strong> <br/>
     - Untuk akun pengguna yang kami sediakan adalah: Email: admin1@gmail.com | Password: admin1 <br/>
     Di dalam Panel Admin, Admin bisa mengatur isi dari Artikel, Video, Kategori Artikel, dan Pesan. Panel Admin juga dilengkapi sistem middleware Role, jadi jika user yang bukan admin mencoba masuk ke panel admin maka akan langsung diarahkan ke Login page kembali. <br/>
-    - Untuk fiturnya sebagai berikut. <br/>
-    1. Artikel: Admin bisa Create, Read, Update, Delete <br/>
-    2. Kategori Artikel: Admin bisa Create, Read, Delete <br/>
-    3. Video Edukasi: Admin bisa Create, Read, Update, Delete <br/>
-    4. Pesan: Admin hanya bisa Read<br/>
+    - Untuk fiturnya sebagai berikut: <br/>
+    ✅ <strong>Artikel:</strong> Admin bisa Create, Read, Update, Delete <br/>
+    ✅ <strong>Kategori Artikel:</strong> Admin bisa Create, Read, Delete <br/>
+    ✅ <strong>Video Edukasi:</strong> Admin bisa Create, Read, Update, Delete <br/>
+    ✅ <strong>Pesan:</strong> Admin hanya bisa Read <br/>
 </p>
 
 <img src="./Readme/video/video-4.gif" width="550"/>
