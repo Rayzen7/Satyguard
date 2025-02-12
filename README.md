@@ -15,14 +15,13 @@ SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan d
     <img src="./Readme/icon/mysql.png" width="70" hspace="7"/>
 </div>
 
-##  🖥️Fitur Utama
-<p align="justify">
-    • __🤖 Satybot:__ AI Chatbot yang siap menemani dan membantu menjaga kesehatan mentalmu. <br/>
-    • __😊 Mood Detector:__ Deteksi suasana hatimu secara instan dan dapatkan rekomendasi yang sesuai. <br/>
-    • __📰 Article:__ Baca berita dan wawasan terbaru seputar kesehatan mental. <br/>
-    • __🎥 Video Edukatif:__ Pelajari lebih lanjut tentang kesehatan mental melalui video informatif. <br/>
-    • __💡 Fakta Menarik:__ Temukan fakta unik dan bermanfaat tentang kesehatan mental. 
-</p>
+## 🖥️ Fitur Utama
+
+- 🤖 **Satybot**: AI Chatbot yang siap menemani dan membantu menjaga kesehatan mentalmu.  
+- 😊 **Mood Detector**: Deteksi suasana hatimu secara instan dan dapatkan rekomendasi yang sesuai.  
+- 📰 **Article**: Baca berita dan wawasan terbaru seputar kesehatan mental.  
+- 🎥 **Video Edukatif**: Pelajari lebih lanjut tentang kesehatan mental melalui video informatif.  
+- 💡 **Fakta Menarik**: Temukan fakta unik dan bermanfaat tentang kesehatan mental.  
 
 ## ERD Database
 <img src="./Readme/ERD.png" width="550"/>
