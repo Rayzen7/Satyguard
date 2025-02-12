@@ -1,4 +1,4 @@
-# SatyGuard Website
+# 🚀SatyGuard Website
 <img src="./Readme/head.png" width="650"/>
 <p style="margin-top: 4px;" align="justify">
 SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan dan dukungan psikologis bagi korban kekerasan serta meningkatkan kesadaran kesehatan mental. Website ini menyediakan fitur utama yaitu chatbot untuk konsultasi kesehatan mental dan mood detector berbasis AI yang menganalisis kondisi emosional pengguna. Selain itu, SatyGuard juga menghadirkan artikel edukatif dan komunitas pemulihan untuk membantu pengguna dalam mengatasi trauma. Dengan pendekatan inovatif yang menggabungkan teknologi dan psikologi, platform ini bertujuan menciptakan lingkungan yang lebih aman dan mendukung bagi individu yang rentan terhadap kekerasan dan gangguan mental.
@@ -14,6 +14,15 @@ SatyGuard adalah platform digital yang dirancang untuk memberikan perlindungan d
     <img src="./Readme/icon/php.png" width="70" hspace="7"/>
     <img src="./Readme/icon/mysql.png" width="70" hspace="7"/>
 </div>
+
+##  🖥️Fitur Utama
+<p align="justify">
+    • **🤖 Satybot:** AI Chatbot yang siap menemani dan membantu menjaga kesehatan mentalmu. <br/>
+    • **😊 Mood Detector:** Deteksi suasana hatimu secara instan dan dapatkan rekomendasi yang sesuai. <br/>
+    • **📰 Article:** Baca berita dan wawasan terbaru seputar kesehatan mental. <br/>
+    • **🎥 Video Edukatif:** Pelajari lebih lanjut tentang kesehatan mental melalui video informatif. <br/>
+    • **💡 Fakta Menarik:** Temukan fakta unik dan bermanfaat tentang kesehatan mental. 
+</p>
 
 ## ERD Database
 <img src="./Readme/ERD.png" width="550"/>
